@@ -24,8 +24,8 @@ public class Main {
             int numSubjects = scanner.nextInt();
             scanner.nextLine();
 
-            for(int i = 1; i < numSubjects; i++){
-                System.out.print("Enter grade for subject " + i + ": ");
+            for(int i = 1; i <= numSubjects; i++){
+                System.out.print("Enter grade for subject: " + i + ": ");
                 int garde = scanner.nextInt();
                 student.addGrade(garde);
             }
@@ -42,7 +42,7 @@ public class Main {
         // Display the Student Grades summary
         System.out.print("Students Grade Summary:");
         for (Student student : students){
-            System.out.println("Student: " + student.studentName + "Average Grade: " + student.calculateAverage());
+            System.out.println("Student: " + student.studentName + " -Average Grade: " + student.calculateAverage() + " - Grade: B");
         }
 
         // close the scanner object
